@@ -1,39 +1,96 @@
+nav{
+  background-color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
 
 .navigation{
   display: inline-block;
   width: 15%;
+  padding: 14px 16px;
   text-align: center;
   text-decoration: none;
-  background-color: rgba(75, 75, 75, 100);
+  background-color: rgba(10, 10, 10, 100);
   color: rgba(255, 255, 255, 100);
   font-size: 16pt;
 }
 
 .navigation:hover{
   text-decoration: none;
-  background-color: rgba(10, 10, 10, 100);
+  background-color: rgba(75, 75, 75, 100);
   color: rgba(255, 255, 255, 100);
 }
 
 #current{
-  text-transform: uppercase;
-  display: inline-block;
-  width: 15%;
-  text-align: center;
-  text-decoration: none;
-  background-color: rgba(75, 75, 75, 100);
-  color: rgba(255, 255, 255, 100);
-  font-size: 16pt;
+  background-color: blue;
 }
 
 body{
   background-color: rgba(75, 75, 75, 100);
+  font-family: 'Actor'
+}
+
+.index_body {
+  background-image: url("../images/img_0626.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.slides{
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  padding-top: 400px;
+}
+
+.my_slides{
+  width: 80%;
 }
 
 h1{
   color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  border-bottom: 100px;
+}
+
+.about_me{
+  display: flex;
+  flex-flow: row-reverse wrap-reverse;
+  justify-content: flex-end;
+  align-content: space-between;
+
+}
+
+.headshot{
+  width: 214px;
+  height: 300px;
+}
+
+.iframe{
+  width: auto;
+  height: auto;
 }
 
 p{
   color: white;
+}
+
+.left{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.right{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+}
+
+.social_media{
+  font-size: 100px;
+  color: rgb(0 ,150 ,255);
+  padding: 5px;
 }
